@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "localredirector",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Local Redirector",
+	"description": "Redirect 127.0.0.1 to custom server",
 	"authors": [
-		"Me!"
+		"Jinby"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.localredirector.mods.LocalRedirector"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"com.localredirector.mods.LocalRedirector"
 		]
 	},
 	"mixins": [
