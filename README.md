@@ -1,4 +1,4 @@
-# Example Mod
+# LocalRedirector for Fabric
 
 ## Setup
 
