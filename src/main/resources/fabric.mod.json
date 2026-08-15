@@ -1,38 +1,28 @@
 {
-	"schemaVersion": 1,
-	"id": "localredirector",
-	"version": "${version}",
-	"name": "Local Redirector",
-	"description": "Redirect 127.0.0.1 to custom server",
-	"authors": [
-		"Jinby"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/localredirector/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.localredirector.mods.LocalRedirector"
-		],
-		"client": [
-			"com.localredirector.mods.LocalRedirector"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "localredirector",
+  "version": "${version}",
+  "name": "Local Redirector",
+  "description": "Redirect 127.0.0.1 to custom server",
+  "authors": [
+    "Jinby"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/localredirector/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.localredirector.mods.LocalRedirector"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
 }
